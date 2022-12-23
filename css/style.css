@@ -1,0 +1,702 @@
+/*—————————————————————————————————————————————————————————————————————*/
+/*        DÉCLARATIONS GÉNÉRALES APPLICABLES À L'ENSEMBLE DU SITE     */
+/*—————————————————————————————————————————————————————————————————————*/
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Classes de polices  */
+
+.amatic
+{
+	font-family: 'Amatic SC', cursive;
+}
+.kaushan
+{
+	font-family: 'Kaushan Script', cursive;
+}
+.montserrat
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.pacifico
+{
+	font-family: 'Pacifico', cursive;
+}
+.playfair
+{
+	font-family: 'Playfair Display', serif;
+}
+.quicksand
+{
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Couleurs des textes*/
+
+.white
+{
+	color: white;
+}
+
+/*Couleurs de fond*/
+
+.bg-darkblue
+{
+	background-color: darkblue;
+}
+.bg-firebrick
+{
+	background-color: firebrick;
+}
+.bg-indigo
+{
+	background-color: indigo;
+}
+.bg-navy
+{
+	background-color: navy;
+}
+.bg-teal
+{
+	background-color: teal;
+}
+.bg-darkgreen
+{
+	background-color: darkgreen;
+}
+.dark-overlay
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.darkslategray
+{
+	background-color: darkslategray;
+}
+
+/*Marges*/
+
+.pad-2
+{
+	padding: 2%;
+}
+.pad-5
+{
+	padding: 5%;
+}
+.pad-10
+{
+	padding: 10%;
+}
+
+/*======================== HEADER ============================*/
+
+/*—————————————— Menu de navigation —————————————————*/
+
+
+header
+{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	padding: 1% 0;
+	background-color: darkslategray;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+
+}
+.brand a
+{
+	color: white;
+	font-size: 1.5em;
+}
+header nav
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul
+{
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+}
+header li
+{
+	margin: 0 5%;
+}
+header nav a
+{
+	margin: 2%;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 2px;
+	transition-duration: 0.5s;
+}
+header nav a:hover
+{
+	color: orange;
+}
+
+section
+{
+	border-bottom: solid darkslategray 1px;
+	padding: 5%;
+}
+h1
+{
+	font-size: 5em;
+	font-weight: 300;
+}
+h2
+{
+	font-size: 3em;
+	text-transform: uppercase;/* Majuscules*/
+}
+
+/*========================= FOOTER ===========================*/
+
+footer
+{
+	text-align: center;
+	padding: 8% 2% 2% 2%;
+	background-color: darkslategray;
+}
+
+footer ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer li
+{
+	flex: 1;
+}
+
+footer a
+{
+	margin: 2%;
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+}
+footer i
+{
+	font-size: 1.5em;
+}
+
+body > a:last-child
+{
+	color: orange;
+	font-size: 3em;
+	position: fixed;
+	z-index: 10;
+	text-shadow: 4px 4px 12px gray;
+	right: 40px;
+	bottom: 40px;
+}
+
+/*—————————————————————————————————————————————————————————————————————*/
+/*                DÉCLARATIONS POUR LA PAGE D'ACCUEIL                  */
+/*—————————————————————————————————————————————————————————————————————*/
+
+/*========================= MAIN =============================*/
+
+/*————————————— Section Haut de page ————————————————*/
+
+#hero
+{
+	color: white;
+	text-align: center;
+	background-image: url(../img/Costa-Rica_Beach.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 150px;
+}
+#hero div
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10%;
+}
+#hero p
+{
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 2;
+}
+#hero p:last-child
+{
+	margin-top: 50px;
+	transition-duration: 1s;
+}
+#hero p:last-child:hover
+{
+	transform: translateY(10px);
+}
+
+#hero a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#hero strong
+{
+	font-weight: 300;
+}
+#hero cite
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+#hero i
+{
+	color: orange;
+	font-size: 2em;
+}
+
+/*————————————— Section Actualités ————————————————*/
+
+#actus
+{
+	display: flex;
+	height: 400px;
+}
+
+#actus-text
+{
+	margin-right: 5%;
+	flex: 50;
+}
+
+#actus p
+{
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+#actus q
+{
+	font-family: 'Pacifico', cursive;
+}
+
+/*.video-container {
+	align-self: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}*/
+.iframe-youtube
+{
+	flex: 50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+/* .video-container iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 50%;
+} */
+
+/*———————— Section Présentation des voyages ————————*/
+
+#presentation-voyages
+{
+	padding: 0;
+	background: url('../img/bambu-forest.jpg') no-repeat center;
+	background-size: cover;
+	color: white;
+}
+#presentation-voyages > div:first-child
+{
+	padding: 5%;
+}
+#presentation-voyages h2, #presentation-voyages p
+{
+	text-align: center;
+}
+#presentation-voyages p:nth-child(2)
+{
+	font-size: 1.5em;
+}
+#encarts-voyages
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.encart-voyage
+{
+	width: 300px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: solid slategray 1px;
+	border-radius: 6px;
+	box-shadow: 6px 6px 20px gay;
+	margin: 50px 0 50px 0;
+	padding-bottom: 30px;
+	transition-duration: 0.5s;
+}
+.encart-voyage:hover
+{
+	transform: scale(1.03);
+}
+.encart-voyage h3
+{
+	font-size: 1.5em;
+	background-color: rgba(245, 130, 40, 0.5);
+	margin: 0;
+	line-height: 2;
+	color: darkslategray;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+.encart-voyage img
+{
+	width: 100%;
+}
+.encart-voyage p
+{
+	margin: 0 5%;
+}
+.encart-voyage p:nth-child(4)
+{
+	margin: 40px 0 20px 0;
+}
+.encart-voyage q
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px black;
+
+}
+.encart-voyage a
+{
+	border: solid white 2px;
+	color: white;
+	font-size: 0.8em;
+	font-weight: bolder;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px black;
+	box-shadow: 1px 1px 1px black;
+	padding: 3%;
+	border-radius: 0 10px 0 10px;
+	transition-duration: 0.5s;
+}
+.encart-voyage a:hover
+{
+	background-color: darkslategray;
+	color: white;
+}
+
+/*——————————————— Section Contact —————————————————*/
+
+#contact
+{
+	display: flex;
+	padding: 0 0 0 5%;
+}
+
+/* Formulaire de contact */
+
+.contact-form
+{
+	flex: 1;
+}
+
+#contact p:nth-child(2)
+{
+	font-size: 1.5em;
+}
+
+#contact h3
+{
+	animation-duration: 2s;
+	animation-name: slidein
+}
+
+#contact input
+{
+	background-color: darkslategray;
+	border: none;
+	border-bottom: 1px white solid;
+	color: white;
+}
+#contact ::placeholder
+{
+	color: white;
+}
+#contact select
+{
+	border: none;
+	width: 30%;
+}
+#contact textarea
+{
+	width: 50%;
+	border: none;
+	border-top: 1px solid darkslategray;
+	border-bottom: 1px solid darkslategray;
+}
+#contact input[type=submit]
+{
+	border: solid 1px white;
+	border-radius: 25px;
+	padding: 0.8% 1.6%;
+	transition-duration: 0.5s;
+}
+#contact input[type=submit]:hover
+{
+	transform: translateY(10px);
+}
+
+/* Carte GoogleMap */
+
+.map-container{
+	flex: 1;
+	position:relative;
+	overflow:hidden;
+	padding-bottom:56.25%; /* 56.25% correspond au ratio 16/9. (peut être défini en haut ou en bas)*/
+}
+
+.map-container iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+
+/*—————————————————————————————————————————————————————————————————————*/
+/*              DÉCLARATIONS POUR LA PAGE DES VOYAGES                  */
+/*—————————————————————————————————————————————————————————————————————*/
+
+
+#articles-voyages article img
+{
+	width: 75%;
+}
+
+table
+{
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table caption
+{
+	font-size: 3em;
+	line-height: 2;
+}
+
+th, td
+{
+	width: 150px;
+	padding: 10px 0 10px 0;
+}
+
+th
+{
+	background-color: darkslategray;
+	color: white;
+	font-size: 0.7em;
+}
+
+td
+{
+	border: solid 1px black;
+}
+
+.fa-check
+{
+	color: green;
+}
+
+.fa-times
+{
+	color: red;
+}
+
+.linkedin iframe
+{
+	width: 50%;
+	height: 600px;
+}
+
+.iframe-map
+{
+	width: 1200px;
+	height: 600px;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*                           REQUÈTES MEDIA                           */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/* pour les tablettes tactiles en mode portrait */
+@media screen and (max-width: 760px)
+{
+	p
+	{
+		
+	}
+}
+
+/* pour les smartphones en mode portrait*/
+@media screen and (max-width: 460px)
+{
+	.dark-overlay
+	{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	header
+	{
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 10px 0 5px 0;
+	}
+
+	.brand
+	{
+		font-size: 1.7em;
+	}
+
+	header li 
+	{
+		margin: 0 10px;
+	}
+	header a
+	{
+		font-size: 1em;
+		letter-spacing: 0px !important;
+		color: orange !important;
+		text-shadow: 1px 1px 1px black;
+	}
+
+	footer
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer ul
+	{
+		flex-direction: column;
+		margin-left: -30px;
+	}
+
+	footer li
+	{
+		padding: 5px 0;
+	}
+
+	body > a:last-child
+	{
+		font-size: 2em;	
+		right: 20px;
+		bottom: 20px;
+	}
+	#hero
+	{
+		padding: 100px 0 0 0;
+
+	}
+
+
+	#hero p
+	{
+		font-size: 1.3em;
+	}
+
+	#hero h1
+	{
+		font-size: 3em;
+	}
+
+	#actus
+	{
+		flex-direction: column;
+		background-color: black;
+		color: white;
+		padding-bottom: 30em;
+		text-align: center;
+		
+	}
+
+	#actus-text
+	{
+		margin-right: 0%;
+	}
+
+	#actus p 
+	{
+		font-size: 1.3em;
+		text-align: center;
+		margin-bottom: 50px;
+		
+	}
+
+	#actus q 
+	{
+		font-size: 1.2em;
+		line-height: 2em;
+		letter-spacing: 2px;
+	}
+
+	#presentation-voyages
+	{
+		background-position: left;
+	}
+
+	
+	#contact
+	{
+		flex-direction: column;
+		padding: 0;
+	}
+	.contact-form
+	{
+		padding: 5%;
+	}
+
+	#contact select 
+	{
+		width: 50%;
+	}
+	#contact textarea
+	{
+		width: 100%;
+		height: 130px;
+	}
+
+	
+	
+
+}
+
+

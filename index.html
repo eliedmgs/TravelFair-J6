@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html><!-- Début du doc html -->
+
+<!------------------------------------------------------------------------------------------->
+<!--                             EN TÊTE DU DOCUMENT HTML                                  -->
+<!--                          (Meta-données & titre du site)                               -->
+<!------------------------------------------------------------------------------------------->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+	<!------------------------- Liens CDN pour les Fonts Awesome -------------------------->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>TravelFair</title>
+</head>
+
+<!------------------------------------------------------------------------------------------->
+<!--                                 CORPS DE LA PAGE                                      -->
+<!--                        (Contenu visible dans le navigateur)                           -->
+<!------------------------------------------------------------------------------------------->
+
+<body>
+
+	<!----------------------------- MENU DE NAVIGATION -------------------------------------->
+	<header>
+
+		<div class="brand">
+			<a href="#" class="pacifico"><i class="fas fa-globe-africa"></i>TravelFair</a>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#actus">Actualités</a></li>
+				<li><a href="html/voyages.html">Voyages</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>	
+		</nav>
+
+	</header>
+
+	<main>
+
+		<!-------------------------- SECTION HAUT DE PAGE ----------------------------------->
+
+		<section id="hero">
+
+			<div>
+
+				<h1>TravelFair</h1>
+
+				<p> 
+					Travel Fair, portail de l'écotourisme travaille en partenariat avec des acteurs tel que <a href="https://babel-voyages.com/fr"><strong>Babel Voyages</strong></a>, <a href="https://bgreener.org/"><strong>BGreener</strong></a> ou <a href="https://greenglobe.travel/"><strong>Greenglobe</strong></a> pour promouvoir le <strong>tourisme durable</strong>
+				</p>
+
+				<cite>
+					<q>
+						L’écotourisme est un voyage responsable dans des environnements naturels où les ressources et le bien-être des populations sont préservés
+					</q>
+				</cite>
+
+				<p><a href="#presentation-voyages"><i class="fas fa-arrow-circle-down"></i></a></p><!-- Créer ici un lien qui amène directement à la section de présentation des voyages. -->
+
+			</div>
+
+		</section>
+
+		<!----------------------------- SECTION ACTUALITÉS ----------------------------------->
+
+		<section id="actus">
+
+			<div id="actus-text" class="left">
+				<h2>Actualités</h2>
+
+				<p>
+					Looser-crew, une bande de doux dingues à la découverte de l'Amérique du sud.
+
+					Leur philosophie se résume en quelque mots :
+					<br>
+					<br>
+					<q>
+						Looser : Se dit d’une personne décontractée adoptant une attitude loose, libre de ses choix, pouvant échouer mais libre d’essayer.
+					</q>
+				</p>
+			</div>
+			
+			<div class="iframe-youtube">
+				<iframe src="https://www.youtube-nocookie.com/embed/Ln3PmlBbpu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="360" height="200"></iframe>
+			</div>
+
+		</section>
+
+		<!-------------------- SECTION DE PRESENTATION DES VOYAGES --------------------------->
+
+		<section id="presentation-voyages">
+
+			<div class="dark-overlay pad-2">
+
+				<h2>Voyages</h2>
+
+				<p>
+					<strong>
+						Quatre voyages hors des sentiers battus séléctionnés pour les amoureux de la nature.
+					</strong>
+				</p>
+
+				<!-- Quatres encarts de présentation des voyages. In fine, les 4 voyages seront representés sous formes de cartes avec un lien "En savoir plus" qui nous amène à l'article du pays concerné dans la deuxième page -->
+
+				<div id="encarts-voyages">
+
+					<!-- Présentation de la Nouvelle Zélande -->
+					<div class="encart-voyage darkslategray">
+						<h3 class="custom-color">Nouvelle Zélande</h3>
+						<img src="img/new-zealand.jpg" alt="Description de l'image">
+						<p><q>Le pays du long nuage blanc</q></p>
+						<p><a href="html/voyages.html#nz">En savoir plus</a></p>
+					</div>
+
+					<!-- Présentation du Costa Rica -->
+					<div class="encart-voyage">
+						<h3 class="custom-color">Costa Rica</h3>
+						<img src="img/costa-rica.jpg" alt="apoifzh">
+						<p><q>Le pays du matin du monde</q></p>
+						<p><a href="html/voyages.html#cr">En savoir plus</a></p>
+					</div>
+
+					<!-- Présentation du Japon -->
+					<div class="encart-voyage">
+						<h3 class="custom-color">Japon</h3>
+						<img src="img/japon.jpg" alt="ozeigh">
+						<p><q>Le pays aux mille dieux</q></p>
+						<p><a href="html/voyages.html#jp">En savoir plus</a></p>
+					</div>
+
+					<!-- Présentation d'Atacama -->
+					<div class="encart-voyage">
+						<h3 class="custom-color">Atacama</h3>
+						<img src="img/atacama.jpg" alt="psiac">
+						<p><q>Le pays de tous les extrêmes</q></p>
+						<p><a href="html/voyages.html#at">En savoir plus</a></p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-------------------- SECTION CONTACT --------------------------->
+
+		<section id="contact" class="darkslategray white">
+
+			<div class="contact-form">
+
+				<h2>Contactez-nous</h2>
+
+				<p class="coming-right">Réservez dès maintenant votre voyage <br> et laissez-nous un messsage</p>
+
+				<form method="post" action="exemple.php">
+
+					<div class="zone-form">
+						<input type="text" name="nom" placeholder="Nom">
+						<input type="email" name="mail" placeholder="Email">
+					</div>
+
+					<div class="zone-form zone-case-cocher">
+
+						<h3>Choisissez vos préstations</h3>
+
+						<input type="checkbox" name="hiking"> <label for="hikking">Randonnée</label>
+						<br>
+						<input type="checkbox" name="diving"> <label for="diving">Plongée sous marine</label>
+						<br>
+						<input type="checkbox" name="ski"> <label for="ski">Ski</label>
+						<br>
+						<input type="checkbox" name="parapente"> <label for="parapente">Parapente</label>
+						<br>
+
+					</div>
+
+					<div class="zone-form">
+
+						<h3>Choisissez votre destination</h3>
+
+						<input type="radio" name= “destination“ value="nz"/> <label for="nz">Nouvelles Zélande</label>
+						<br>
+						<input type="radio" name= “destination“ value="cr"/> <label for="cr">Costa Rica</label>
+						<br>
+						<input type="radio" name= “destination“ value="jp"/> <label for="jp">Japon</label>
+						<br>
+						<input type="radio" name= “destination“ value="at"/> <label for="at">Atacama</label>
+
+
+					</div>
+
+					<br>
+
+					<div class="zone-form">
+
+						<label for="pays">Votre nationalité</label><br/>
+						<select name="pays" id="pays">
+							<option value="france">France</option>
+							<option value="espagne">Espagne</option>
+							<option value="italie">Italie</option>
+							<option value="royaume-uni">Royaume-Uni</option> <option value="canada">Canada</option>
+							<option value="etats-unis">États-Unis</option> <option value="chine">Chine</option>
+							<option value="japon">Japon</option>
+						</select>
+
+					</div>
+
+					<br>
+
+					<div class="zone-form zone-message">
+						<label for=“message“>Laissez-nous un message</label>
+						<br/>
+						<textarea name="message" id="message" placeholder= "Votre message"></textarea>
+					</div>
+
+					<br>
+
+					<div class="zone-form">
+
+						<input type="submit" name="bouton-envoi">
+
+					</div>
+
+				</form>
+
+			</div>	
+
+			<div class="map-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3779297719925!2d2.3568314157260533!3d48.85100327928677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fc76447e09%3A0x69f18de68a6d7d61!2s6%20Rue%20Saint-Louis%20en%20l&#39;%C3%8Ele%2C%2075004%20Paris!5e0!3m2!1sfr!2sfr!4v1670618232822!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+		</section>
+
+	</main>
+
+	<footer>
+
+		<ul>
+			<li><a href="mailto:email@example.com">contact@travelfair.com</a></li>
+			<li><a href="tel:+765432100">0765432100</a></li>
+			<li><a href="/">Mentions légales</a></li>
+			<li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+		</ul>
+				
+	</footer>
+
+	<a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+</body>
+
+</html><!-- Fin du doc html -->
+
+
+
+
+
+
+
+
